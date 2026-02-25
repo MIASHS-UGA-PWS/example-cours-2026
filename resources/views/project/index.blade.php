@@ -13,4 +13,6 @@
             </li>
             @endforeach
         </ul>
+
+        <a href="/project/create">Créer un nouveau projet</a>
 	@endsection

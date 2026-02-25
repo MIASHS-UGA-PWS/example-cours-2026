@@ -16,4 +16,15 @@ class ProjectController extends Controller
             'projects' => $projects
         ]);
     }
+    public function create()
+    {
+        return view('project.create');
+    }
+
+    public function store()
+    {
+        Project::create(request(['title', 'description']));
+
+        return redirect('/project'); // méthode pour rediriger vers une autre url (en get par défaut)
+    }
 }
